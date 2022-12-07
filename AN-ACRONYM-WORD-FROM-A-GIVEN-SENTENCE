@@ -1,3 +1,5 @@
+1) SOLVING FROM 1 METHOD
+
 # function to create acronym
 def fxn(stng):
 
@@ -18,3 +20,56 @@ def fxn(stng):
 
 stng=input('ENTER A STRING: ')
 print(fxn(stng))
+
+
+#2) SOLVING FROM 2 METHOD
+
+# function to create acronym
+
+'''def fxn(stng):
+
+
+
+    # add first letter
+
+    oupt = stng[0]
+
+
+
+    # iterate over string
+
+    for i in range(1, len(stng)):
+
+        if stng[i-1] == ' ':
+
+
+
+            # add letter next to space
+
+            oupt += stng[i]
+
+
+
+    # uppercase oupt
+
+    oupt = oupt.upper()
+
+    return oupt
+stng=input('ENTER THE STRING: ')
+print(fxn(stng))'''
+
+#3)SOLVING FROM 3 METHOD
+
+'''def fxn(stng):
+    lst=stng.split()
+
+
+    l=[]
+    for i in lst:
+        if(i!='and'):
+            a=i[0]
+            l.append(a)
+    b="".join(l)
+    return b.upper()
+stng=input('ENTER THE STRING: ')
+print(fxn(stng))'''
